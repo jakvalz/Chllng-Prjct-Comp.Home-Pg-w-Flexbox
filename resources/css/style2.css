@@ -1,0 +1,258 @@
+/* Universal Styles */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background-attachment: fixed;
+}
+
+main {
+    margin: 11rem 5.5rem 50rem 5.5rem;
+    font-family: "Kanit";
+    color: hsl(0, 0%, 95%);
+}
+
+br, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: hsl(359, 99%, 23%);
+    color: hsl(0, 0%, 95%);
+    font-family: "Lato";
+    font-size: 1.5rem;
+    padding: 0;
+    box-shadow: 1px 5px 90px hsl(0, 0%, 0%);
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5.5rem;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-container .nav-items {
+    margin: 0 3rem;   
+}
+
+.nav-container .nav-items a {
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+
+.single-item-container a {
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+
+.single-item-container a::after {
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+
+#logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-name h4 {
+    font-size: 2rem;
+    margin: 1rem auto 1rem auto;
+}
+
+#logo-name img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-right: 7px;
+}
+
+#contact-nav {
+    margin-right: 0;
+}
+
+/* Main Styles */
+/* Form Styles */
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#heading-line {
+    border: 1px solid hsl(0, 0%, 95%);
+    margin: .5rem 0 4rem 0;
+}
+
+.line {
+    margin: 1rem 0;
+}
+
+form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid hsl(358, 100%, 4%);
+    padding: 1rem 2rem;
+    background-color: hsl(358, 100%, 4%, 0.8);
+    border-radius: 1rem;
+    width: 875px;
+    height: 620px;
+    flex: 0 1 875px;
+}
+
+form h3 {
+    margin: 0;
+}
+
+.form-mini-container {
+    display: flex;
+}
+
+label {
+    margin: .25rem 1rem .25rem 0;
+}
+
+input {
+    /* margin-right: 1rem; */
+    margin-bottom: .5rem;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 95%, 0.5); 
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid hsl(0, 0%, 95%);
+}
+
+#flname-container {
+    & #fname {
+    margin-right: 7rem;
+    }
+    margin-bottom: 1.75rem;
+}
+
+#contact-container {
+    :nth-child(n + 2 of label) {
+        margin-left: 2rem;
+    }
+}
+
+#address-container {
+    margin-bottom: 1.75rem;
+    :nth-child(n + 2 of label) {
+        margin-left: 1rem;
+    }
+}
+
+#prjct-description-container textarea {
+    margin: 0 2rem 1.75rem auto;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 7px;
+    background-color: transparent;
+    outline: none;
+    color: hsl(0, 0%, 95%);
+}
+
+#files-container input{
+    border: none;
+}
+
+button {
+    text-align: center;
+    font-size: 1rem;
+    height: 1rem;
+    width: 125px;
+    padding: .5rem .25rem 1.75rem .25rem;
+    margin: auto;
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    transition: ease-in .2s;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 95%, 0.8);
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    box-sizing: border-box;
+}
+
+.main-ftr-container {
+    background-color: hsl(358, 100%, 4%);
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.ftr-container, .lower-half-container {
+    margin: 0 5.5rem;
+}
+
+.ftr-container {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(358, 100%, 25%, 0.5);
+    font-size: .9rem;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+}
+
+.list-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-container li h6 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.line-break {
+    border: 3px solid hsl(358, 100%, 7%);
+    margin-bottom: 0;
+}
+
+.lower-half-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-right {
+    color: hsl(358, 100%, 25%, 0.5);
+    font-family: sans-serif;
+}
+
+.social-media-container img {
+    margin: 1rem 2rem;
+    background-color: hsl(359, 99%, 15%);
+    padding: .3rem;
+    border-radius: 25px;
+}
+
+.social-media-container img:hover {
+    cursor: pointer;
+}

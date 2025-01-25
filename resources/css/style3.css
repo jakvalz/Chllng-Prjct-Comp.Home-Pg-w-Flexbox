@@ -1,0 +1,94 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(hsl(359, 99%, 28%), hsl(358, 100%, 7%));
+    background-attachment: fixed;
+}
+
+main {
+    margin: 11rem 5.5rem 50rem 5.5rem;
+    font-family: "Kanit";
+    color: hsl(0, 0%, 95%);
+}
+
+/* Main Styles */
+.coming-soon {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Styles */
+
+footer {
+    bottom: 0;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.main-ftr-container {
+    background-color: hsl(358, 100%, 4%);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ftr-container, .lower-half-container {
+    margin: 0 5.5rem;
+}
+
+.ftr-container {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(358, 100%, 25%, 0.5);
+    font-size: .9rem;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+}
+
+.list-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-container li h6 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.line-break {
+    border: 3px solid hsl(358, 100%, 7%);
+    margin-bottom: 0;
+}
+
+.lower-half-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-right {
+    color: hsl(358, 100%, 25%, 0.5);
+    font-family: sans-serif;
+}
+
+.social-media-container img {
+    margin: 1rem 2rem;
+    background-color: hsl(359, 99%, 15%);
+    padding: .3rem;
+    border-radius: 25px;
+}
+
+.social-media-container img:hover {
+    cursor: pointer;
+}
