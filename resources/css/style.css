@@ -216,13 +216,13 @@ nav {
 }
 
 /* Jobs Section */
-@supports (scroll-snap-align: start) {
+/* @supports (scroll-snap-align: start) {
     .jobs-main-container {
       scroll-snap-type: y mandatory;
       scroll-padding-top: 11rem;
       overflow: scroll;
     }
-  }
+  } */
 
 .jobs-main-container {
     margin: 20rem 5.5rem 30rem 5.5rem;
